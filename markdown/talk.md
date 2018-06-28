@@ -72,8 +72,8 @@ _src: [Amazon](https://developer.amazon.com/echo-show)_
 ![Amazon Echo Cube](../images/echocube.jpg)
 _src: [gearpatrol.com](https://gearpatrol.com/2018/06/07/amazon-fire-tv-cube-first-look/)_
 
-- With things like Tuning it on or off, adjusting the volume, even searching and starting shows... All with your voice
-- Such as "Alexa play Lucifer", and it will open Hulu and stat playing where you left off
+- Such as, tuning it on or off your TV, adjusting the volume, even searching and starting shows... All with your voice
+- Just say "Alexa play Lucifer", and it will open Hulu and stat playing where you left off
 
 ---
 
@@ -179,7 +179,7 @@ _code: ./lambda/lambda.go_
 This is officially from Amazon. And really very simple.
 
 - Here all we do is add `lamda.Start(<function_name>)` in the `main()` function
-- And the `<function_name>` parameters we the `struct` (or could be map), that the Lambda SDK can decode from JSON
+- `<function_name>` parameters we use a `struct` (or could be map), that the Lambda SDK can decode from JSON
 - The Lambda lib will handle encoding and decoding
 
 _code: ./lambda/lambda.go_
@@ -188,7 +188,7 @@ _code: ./lambda/lambda.go_
 
 ## Deploying the Lambda
 
-We will deploy from the AWS CLI tool. So you will have to already logged in.
+We will deploy from the AWS CLI tool, so you will have to already be logged in.
 
 Build the Go binary. Make sure you build it for Linux/AMD64
 
