@@ -1,0 +1,115 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "planet gopher",
+            "intents": [
+                {
+                    "name": "PickPlanetintent",
+                    "slots": [
+                        {
+                            "name": "PlanetName",
+                            "type": "PLANET_NAMES"
+                        }
+                    ],
+                    "samples": [
+                        "about {PlanetName}",
+                        "give me a fact about {PlanetName}",
+                        "pick {PlanetName}",
+                        "select {PlanetName}",
+                        "{PlanetName} fact",
+                        "{PlanetName}"
+                    ]
+                },
+                {
+                    "name": "RandomPlanetIntent",
+                    "slots": [],
+                    "samples": [
+                        "random planet",
+                        "pick planet",
+                        "pick random planet",
+                        "pick a random planet"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "PLANET_NAMES",
+                    "values": [
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "moon"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "mercury"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "venus"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "mars"
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "name": {
+                                "value": "earth"
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "name": {
+                                "value": "jupiter"
+                            }
+                        },
+                        {
+                            "id": "7",
+                            "name": {
+                                "value": "saturn"
+                            }
+                        },
+                        {
+                            "id": "8",
+                            "name": {
+                                "value": "sun"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
