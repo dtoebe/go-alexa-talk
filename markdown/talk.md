@@ -1,4 +1,4 @@
-# Let's build an Alaxa Skill in Go!
+# Let's build an Alexa Skill in Go!
 
 by: Daniel Toebe
 
